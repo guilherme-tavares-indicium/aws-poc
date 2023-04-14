@@ -1,0 +1,36 @@
+# Ignore .terraform directories
+**/.terraform/*
+
+# Ignore .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Ignore .tfvars files that are automatically generated
+*.auto.tfvars
+*.auto.tfvars.json
+*.auto.tfvars.tf
+
+# Ignore crash log files
+crash.log
+
+# Ignore any backup files created by text editors or IDEs
+*~
+*.bak
+*.swp
+*.backup
+*.save
+
+# Ignore the .idea directory created by IntelliJ IDEA
+.idea/
+
+# Ignore the .vscode directory created by Visual Studio Code
+.vscode/
+
+# Ignore .terraform.lock.hcl files
+*.lock.hcl
+
+# Ignore .terraformrc files
+.terraformrc
+
+# Ignore .terraform-version files
+.terraform-version
