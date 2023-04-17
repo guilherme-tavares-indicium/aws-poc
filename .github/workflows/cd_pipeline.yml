@@ -25,6 +25,6 @@ jobs:
           ECR_REPO_URI: '196029031078.dkr.ecr.us-east-1.amazonaws.com/hyland-poc-ecr'
         run: |
           cd ./etl_scripts
-          docker build -t my-image .
+          docker build -t etl_image .
           docker tag my-image $ECR_REPO_URI:latest
           docker push $ECR_REPO_URI:latest
