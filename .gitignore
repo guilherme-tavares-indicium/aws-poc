@@ -34,3 +34,42 @@ crash.log
 
 # Ignore .terraform-version files
 .terraform-version
+
+# Ignore Python virtual environment folders
+venv/
+env/
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore log files
+*.log
+
+# Ignore data files
+data/
+
+# Ignore etl job output files
+output/
+
+# Ignore credentials file
+*.creds
+
+# Ignore etl scripts config files
+*.conf
+
+# Ignore etl scripts dependencies
+*.egg-info/
+dist/
+build/
+
+# Ignore any files in the etl_scripts folder that don't need to be versioned
+etl_scripts/__pycache__/
+etl_scripts/*.pyc
+etl_scripts/*.pyo
+etl_scripts/*.log
+etl_scripts/*.txt
+etl_scripts/*.csv
+etl_scripts/.env
+!etl_scripts/iris.csv

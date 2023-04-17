@@ -5,7 +5,7 @@ provider "aws" {
 module "ecr" {
   source = "terraform-aws-modules/ecr/aws"
 
-  repository_name = "private-example"
+  repository_name = "hyland-poc-ecr"
 
   repository_read_write_access_arns = ["arn:aws:iam::196029031078:user/guilherme.tavares"]
   repository_lifecycle_policy = jsonencode({
