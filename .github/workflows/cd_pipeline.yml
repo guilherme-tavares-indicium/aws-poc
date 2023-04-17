@@ -26,5 +26,5 @@ jobs:
         run: |
           cd ./etl_scripts
           docker build -t etl_image .
-          docker tag my-image $ECR_REPO_URI:latest
+          docker tag etl_image $ECR_REPO_URI:latest
           docker push $ECR_REPO_URI:latest
