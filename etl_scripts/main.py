@@ -3,13 +3,18 @@ import boto3
 import pandas as pd
 import os
 from datetime import datetime
+import logging
+import sys
+
+# configure logging to output to the console
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
 # Define parameters
 now = datetime.now() # current date and time
 accessKeyId = os.environ.get("AWS_ACCESS_KEY_ID")
 secretAccessKey = os.environ.get("AWS_SECRET_ACCESS_KEY")
-print(accessKeyId)
-print(secretAccessKey)
+logging.info('Output: accessKeyId=' + str(accessKeyId))
+logging.info('Output: secretAccessKey=' + str(secretAccessKey))
 
 regionName = "us-east-1"
 bucketName = "hylanddemo-test"
