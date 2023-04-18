@@ -9,7 +9,7 @@ now = datetime.now() # current date and time
 accessKeyId = os.environ.get("AWS_ACCESS_KEY_ID")
 secretAccessKey = os.environ.get("AWS_SECRET_ACCESS_KEY")
 regionName = "us-east-1"
-bucketName = "hylanddemo"
+bucketName = "hylanddemo-test"
 outputBlobName = f"iris_setosa_{now}.csv"
 
 # Load iris dataset
