@@ -8,6 +8,9 @@ from datetime import datetime
 now = datetime.now() # current date and time
 accessKeyId = os.environ.get("AWS_ACCESS_KEY_ID")
 secretAccessKey = os.environ.get("AWS_SECRET_ACCESS_KEY")
+print(accessKeyId)
+print(secretAccessKey)
+
 regionName = "us-east-1"
 bucketName = "hylanddemo-test"
 outputBlobName = f"iris_setosa_{now}.csv"
