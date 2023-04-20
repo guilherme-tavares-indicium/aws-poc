@@ -18,7 +18,7 @@ logging.info('Output: secretAccessKey=' + str(secretAccessKey))
 
 regionName = "us-east-1"
 bucketName = "hylanddemo-test"
-outputBlobName = f"iris_setosa_v2_{now}.csv"
+outputBlobName = f"iris_setosa_{now}.csv"
 
 # Load iris dataset
 df = pd.read_csv("iris.csv")
